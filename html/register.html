@@ -3,39 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <title>Login</title>
-  <link rel="stylesheet" href="./css/style_login.css">
+  <link rel="stylesheet" href="./../css/style_register.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
 
   <main class="the_container ">
-    <h2>sing in</h2>
+    <h2>Sing up</h2>
 
-    <form id="loginForm" >
-      <label for="">Full Name</label>
-      <input type="texto" id="name" placeholder="e.g jhon Doe"  required>
+    <form id="registerForm" >
 
-      <label for="email">Email Address</label>
+      <label for="email">Email </label>
       <input type="email" id="email" placeholder="" required>
 
       <label for="password"> Password</label>
       <input type="password" id="password" required>
 
-
-      <label for="">Select Role</label>
+        <label for="">Select Role</label>
       <select name="" id="rol" required>
         <option value="admin">Admin</option>
         <option value="user">User</option>
       </select>
       
-      
 
+      
+    
       <button type="submit">sig in</button>
     </form>
 
     <p id="message"></p>
   </main>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  <script src="./js/login.js"></script>
+  <script src="./../js/register.js"></script>
 </body>
 </html>
