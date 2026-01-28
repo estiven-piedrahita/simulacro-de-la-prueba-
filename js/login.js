@@ -18,7 +18,7 @@ form.addEventListener("submit", (e)=> {
     let theName = inputEmail.value.trim();
     let theEmail = inputEmail.value.trim();
     let thePassword = inputPassword.value;
-    let Role = document.getElementById("rol").value;
+    let role = document.getElementById("rol").value;
    
     
     let userFound = users.find(user => user.email === theEmail && user.password === thePassword
@@ -31,15 +31,26 @@ form.addEventListener("submit", (e)=> {
         form.reset();
         return;
     }
-    sessionStorage.setItem("login", "true");  
 
-    localStorage.setItem("loggedUser", JSON.stringify(Role,theName,userFound));
+    let rolFound = users.some(user => user.rol === role);
+
+    if (!rolFound) {
+        message.textContent = "invalid data";
+        message.style.color = "red";
+        setTimeout(() => message.textContent = "", 2000);
+        form.reset();
+        return; 
+    }
+
+    localStorage.setItem("loggedUser",inputEmail, role);
+
+    localStorage.setItem("Users", JSON.stringify(role,theName,userFound));
     
     message.textContent = "Login successful";
     message.style.color = "green"
 
     
     setTimeout(() => {
-    window.location.href = "profiles.html";
+    window.location.href = "#";
 }, 1000);
 });

@@ -8,12 +8,15 @@ let users = JSON.parse(localStorage.getItem("users")) || [];
 let inputEmail = document.getElementById("email").value;
 let inputPassword = document.getElementById("password").value;
 let rol = document.getElementById("rol").value;
-let p = document.getElementById("message");
+let message = document.getElementById("message");
 
 let existEmail = users.some(user => user.email === inputEmail);
 
 if (existEmail) {
-    alert("You already have an account created");
+    message.textContent = "You already have an account created";
+    message.style.color = "red";
+    setTimeout(()=>{ message.textContent= ""},2000)
+
     return;
 }
 
@@ -24,12 +27,10 @@ users.push({
 });
 localStorage.setItem("users", JSON.stringify(users));
 
-localStorage.setItem("loggedUser",inputEmail, rol);
+    message.textContent = "Account successfully created";
+    message.style.color = "green";
+    setTimeout(()=>{message.textContent = "",window.location.href = "./index.html"; },2000)
 
-alert("Account successfully created");
-    p.textContent = "Account successfully created";
-    p.style.color = "green";
-
-    window.location.href = "login.html";
+    
     form.reset();
 });
