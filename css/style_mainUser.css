@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: bisque;
+}
+/* nav and context */
+.title{
+    font-size: 25px;
+    margin-left: 150px;
+    font-weight: 600;
+    color: black;
+}
+#the-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+#navbarAuth{
+    justify-content: end;
+    gap: 50px;
+    margin-right: 100px;
+}
+#navbarAuth a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+/* cards and search */
+
+.firsh{
+    max-width: 52%;
+    margin-top:50px;
+    height: 100vh;
+}
+
+.title-input{
+    display: flex;
+    justify-content: space-around;
+}
+
+#name1{
+    color: black;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+#input-search{
+    padding: 10px 10px 4px;
+    width: 400px;
+    border-radius: 12px;
+    border: none;
+    margin-top: 10px;
+    margin-left: 300px;
+    font-size: 12x;
+    border: 1px solid #a4a4a498;
+}
+
+
+/* btns filter  */
+
+.filter{
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.btn-1{
+    width: 100px;
+    padding: 10px 10px 4px;
+    background-color: rgba(196, 190, 190, 0.149);
+    color:black;
+    border-radius: 12px;
+    font-size: 15x;
+    border: 1px solid#cac6c6d3;
+}
+
+
+/* second container */
+
+.seconds{
+    width: 48%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    margin-top: 12%;
+    
+}
+
+#content-card{
+    width: 40%;
+    border: 1px solid rgba(0, 0, 0, 0.213);
+    padding: 20px 40px 40px;display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+}
