@@ -12,11 +12,10 @@ let message = document.getElementById("message");
 
 let existEmail = users.some(user => user.email === inputEmail);
 
-if (!existEmail) {
+if (existEmail) {
     message.textContent = "You already have an account created";
     message.style.color = "red";
     setTimeout(()=>{ message.textContent= ""},2000)
-
     return;
 }
 
