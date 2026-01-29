@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: bisque;
+}
+/* nav and context */
+.title{
+    font-size: 25px;
+    margin-left: 150px;
+    font-weight: 600;
+    color: black;
+}
+#the-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+#navbarAuth{
+    justify-content: end;
+    gap: 50px;
+    margin-right: 100px;
+}
+
+#navbarAuth button{
+    padding: 10px 20px;
+    border: 1px solid #9b98985f;
+    border-radius: 18px;
+}
+
+/* firsh container */
+.firsh{
+    max-width: 52%;
+    margin-top:150px;
+    height: 100vh;
+}
+
+#name1{
+    color: black;
+}
+
+.title-view h2{
+    margin-top: 15px;
+    margin-left: 600px;
+    font-size: 23px;
+    color: rgba(0, 128, 0, 0.593);
+    
+}
+
+
+/* orders */
+
+.card{
+    margin-top: 40px;
+    width: 90%;
+    margin-left: 5%;
+    padding: 20px 30px;
+    border: 1px solid #c2c2c298;
+    box-shadow: 0px 2px 8px #b2b2b29a;
+    margin-bottom: 10px;
+}
+.content-card{
+    display: flex;
+    justify-content: space-between;
+
+}
+.price{
+    display: flex;
+    gap: 20px;
+}
+.actions{
+    display: flex;
+    justify-content: end;
+}
+.container-fluid{
+    display: flex;
+
+}
+
+.seconds{
+    width: 48%;
+    display: flex;
+    justify-content: end;
+    margin-top: 4%;
+}
+
+
+/* card of profile */
+    .profile-card {
+        width: 300px;
+        border-radius: 15px;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        text-align: center;
+        font-family: sans-serif;
+        padding: 20px;
+        margin: 20px auto;
+        border: 1px solid #eee;
+    }
+
+    .profile-img {
+        width: 225x;
+        height: 240px;
+        border-radius: 20%;
+        object-fit: cover;
+
+    }
+
+    .profile-name {
+        margin: 15px 0 5px;
+        font-size: 1.5em;
+        color: #333;
+    }
+
+    .profile-title {
+        color: #777;
+        font-size: 1em;
+        margin-bottom: 15px;
+    }
+
+    .profile-btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 25px;
+        transition: background 0.3s;
+    }
+
+    .profile-btn:hover {
+        background-color: #0056b3;
+    }
+

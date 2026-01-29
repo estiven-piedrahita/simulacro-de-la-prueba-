@@ -72,9 +72,15 @@ body{
     padding: 10px 10px 4px;
     background-color: rgba(196, 190, 190, 0.149);
     color:black;
-    border-radius: 12px;
-    font-size: 15x;
+    border-radius: 17px;
+    font-size: 11px;
     border: 1px solid#cac6c6d3;
+    transition: 1s ease;
+
+}
+.btn-1:hover{
+    background-color: black;
+    color: #fff;
 }
 
 

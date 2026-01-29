@@ -51,6 +51,7 @@ form.addEventListener("submit", (e)=> {
 
     
     setTimeout(() => {
-    window.location.href = "#";
+    window.location.href = "mainUser.html";
 }, 1000);
 });
+

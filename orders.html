@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style_orders.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-white shadow-sm"
+        id="the-nav"
+      >
+        <div class="container-fluid">
+          <span
+            ><i class="fa-solid fa-utensils" style="color: #63e6be"></i
+          ></span>
+          <h2 class="title">RestorApp</h2>
+
+          <div class="collapse navbar-collapse" id="navbarAuth">
+            <button>Log Out</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container-fluid" id="contenedor-padre">
+        <div class="firsh">
+            <div class="title-input">
+                <div><h1 id="name1">Recent orders</h1></div>
+                    <div class="title-view">
+                    <h2>View All</h2>
+                    </div>
+            </div>
+            <div class="card">
+                <div class="content-card">
+                    <div class="type-order">
+                        <h5 class="title-the-orders">#ORD-4402</h5>
+                        <p>oct 24, 2023 2 items</p>
+                    </div>
+                    <div class="price">
+                        <div><h5>$ 45.50</h5></div>
+                        <div><p>Delivered</p></div>
+                    </div>
+                </div>
+
+                <div class="actions">
+                    <button class="btn edit" data-id="${idea.id}">Editar</button>
+                    <button class="btn delete" data-id="${idea.id}">Eliminar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="seconds">
+            <div id="card">
+                <h3>Account Details</h3>
+                <div class="profile-card">
+                <img
+                    src="./img/una-persona-divertida-5801163.webp"
+                    alt="Foto de Perfil"
+                    class="profile-img"/>
+                <h2 class="profile-name">Nombre Apellido</h2>
+                <p class="profile-title">Desarrollador Web</p>
+                <p>
+                    Descripción breve del perfil profesional, habilidades o
+                    intereses.
+                </p>
+                <a href="#" class="profile-btn">Contactar</a>
+                </div>
+            </div>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
